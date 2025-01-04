@@ -21,8 +21,10 @@ During the data cleaning process, the following steps were performed to ensure d
 
 Attrition Count Column
 - Attrition_Count= IF(HR_Analytics[Attrition]="yes",1,0)
+  
 Attrition Rate Measure
 - Attrition_Rate = SUM(HR_Analytics[Attrition_Count])/SUM(HR_Analytics[EmployeeCount])
+  
 Average Age Measure
 - AvgAge = AVERAGE(HR_Analytics[Age])
 
